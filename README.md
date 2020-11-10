@@ -31,9 +31,9 @@
 
 ## 使用：
 
-视频链接： [视频](./src/howToUse.mp4)
+视频链接： [使用视频教程](./src/howToUse.mp4)：如果没有开无障碍服务的话需要手动在设置中开启
 
-<video id="video" controls="" preload="none" poster="./src/avator.jfif"> <source id="mp4" src="./src/howToUse.mp4" type="video/mp4"> </video>
+<video id="video" controls="" preload="none" poster="https://github.com/Freedomisgood/NjuptCmcc/src/avator.jfif"> <source id="mp4" src="https://github.com/Freedomisgood/NjuptCmcc/src/howToUse.mp4" type="video/mp4"> </video>
 
 Apk下载链接： [NjuptCmcc DownLoad](./NjuptCmcc.apk)
 
