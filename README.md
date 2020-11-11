@@ -35,5 +35,8 @@
 
 <video id="video" controls="" preload="none" poster="https://github.com/Freedomisgood/NjuptCmcc/src/avator.jfif"> <source id="mp4" src="https://github.com/Freedomisgood/NjuptCmcc/src/howToUse.mp4" type="video/mp4"> </video>
 
-Apk下载链接： [NjuptCmcc DownLoad](./NjuptCmcc.apk)
+Apk下载链接： [NjuptCmcc DownLoad](./src/NjuptCmcc.apk)
 
+---
+
+2020年11月11日： 现已新增通用版本[NjuptNet DownLoad](./src/NjuptNet.apk)
