@@ -11,6 +11,8 @@
   <a href="https://github.com/Freedomisgood/NjuptCmcc/network/members"><img alt="star" src="https://img.shields.io/github/forks/Freedomisgood/NjuptCmcc.svg?label=Fork&style=social"/></a>
   <a href="https://github.com/Freedomisgood/NjuptCmcc/watchers"><img alt="star" src="https://img.shields.io/github/watchers/Freedomisgood/NjuptCmcc.svg?label=Watch&style=social"/></a>
 </p>
+
+
 ---
 
 现在校园网套餐没有无限流量， 且限速额度也比较小了，因此导致了最近流量一直不够用。切到另外一张卡上，结果还一下子花了10块流量费QAQ。
@@ -21,9 +23,9 @@
 
 ## 说明：
 
-> 用户名(DDDDD)： 一般是学号@运营商，例如B17050322@cmcc，没有运营商则为校园网。
+> 用户名(DDDDD)： 一般是学号@运营商，例如B17050322@cmcc。
 
-由于我现在办的是移动卡， 因此代码中现在默认是CMCC， 有需要可以自行修改。
+由于我现在办的是移动卡， 因此代码中现在默认是CMCC， 有需要可以自行修改。(2020年11月10日)
 
 ## 原理：
 
@@ -40,3 +42,5 @@ Apk下载链接： [NjuptCmcc DownLoad](./src/NjuptCmcc.apk)
 ---
 
 2020年11月11日： 现已新增通用版本[NjuptNet DownLoad](./src/NjuptNet.apk)
+
+后缀选项——电信为: @njxy; 移动为: @cmcc; 不填默认为NJUPT。
