@@ -23,6 +23,8 @@
 
 ## 说明：
 
+> :star:只适用安卓， 不支持IOS
+>
 > 用户名(DDDDD)： 一般是学号@运营商，例如B17050322@cmcc。
 
 由于我现在办的是移动卡， 因此代码中现在默认是CMCC， 有需要可以自行修改。(2020年11月10日)
@@ -33,7 +35,7 @@
 
 ## 使用：
 
-视频链接： [使用视频教程](./src/howToUse.mp4)：如果没有开无障碍服务的话需要手动在设置中开启
+视频链接： [使用视频教程](./src/howToUse.mp4)。如无法使用，尝试开下无障碍服务。如果还是无效，则反馈issue
 
 <video id="video" controls="" preload="none" poster="https://github.com/Freedomisgood/NjuptCmcc/src/avator.jfif"> <source id="mp4" src="https://github.com/Freedomisgood/NjuptCmcc/src/howToUse.mp4" type="video/mp4"> </video>
 
