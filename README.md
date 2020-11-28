@@ -43,6 +43,8 @@ Apk下载链接： [NjuptCmcc DownLoad](./src/NjuptCmcc.apk)
 
 ---
 
-2020年11月11日： 现已新增通用版本[NjuptNet DownLoad](./src/NjuptNet.apk)
+2020年11月11日： 现已新增通用版本[Github下载：NjuptNet DownLoad](./src/NjuptNet.apk)
 
-后缀选项——电信为: @njxy; 移动为: @cmcc; 不填默认为NJUPT。
+蓝奏云下载链接：https://wws.lanzous.com/iTcMIiuo5na  密码:c6xc
+
+注：后缀选项——电信为: @njxy; 移动为: @cmcc; 不填默认为NJUPT。
