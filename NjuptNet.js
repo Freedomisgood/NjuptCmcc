@@ -46,11 +46,11 @@ var params = {
     "protocol": "http:",
     "hostname": "p.njupt.edu.cn",
     "iTermType": "1",
-    "wlanacname": "XL-BRAS-SR8806-X",
     "mac": "00-00-00-00-00-00",
     "enAdvert": "0",
     "queryACIP": "0",
     "loginMethod": "1"
+    // "wlanacname": "XL-BRAS-SR8806-X",
     // "wlanuserip": "10.163.137.68",
     // "wlanacip": "10.255.252.150",
     // "ip": "10.163.137.68",
@@ -104,14 +104,28 @@ function getUrlkey(url) {
 
 function doConfig(){
     var url = "http://6.6.6.6/";        // 如果已上线, 则会访问超时; 如果不是校园网则无法访问
-    var response = http.get(url);
-    if (response.statusCode == 200){
-        var html = response.body.string();
-        var url = html.match("location.href=\\\"(http://.*)\\\"")[0]
-        var cfg = getUrlkey(url);
-        return cfg;
-    }else{
-        toast("Unknown Error~")
+    try {
+        var response = http.get(url);
+        if (response.statusCode === 200) {
+            var redirectURL = response.request.url().toString();   // NJUPT登录6.6.6.6的结果不同， 重新通过redirectURL来提取参数
+            if (redirectURL === "http://6.6.6.6/") {
+                var html = response.body.string();
+                url = html.match("location.href=\\\"(http://.*)\\\"")[0];
+                var cfg = getUrlkey(url);
+                return cfg;
+            }else{
+                // http://10.10.244.11/a79.htm?UserIP=10.164.56.87&wlanacname=XL_ME60&10.255.254.2=10.255.254.2
+                url = redirectURL.match("(http://.*)")[0];
+                var cfg = getUrlkey(url);
+                return cfg;
+            }
+        }else{
+            toast("Unknown Error~")
+            exit()
+        }
+    } catch (e) {
+        toast("当前已成功登陆or未连接校园网");
+        exit();
     }
 };
 
@@ -145,8 +159,8 @@ function getUserConfig(){
 
 
 function login(cfg, userConfig){
-    var finishParams = Object.assign(cfg, params);
-    var finishData = Object.assign(data, userConfig);
+    let finishParams = Object.assign(cfg, params);
+    let finishData = Object.assign(data, userConfig);
     let newUrl = getUrl("http://p.njupt.edu.cn:801/eportal/", finishParams);
     // log(finishParams);
     // log(finishData);
@@ -189,7 +203,7 @@ function login(cfg, userConfig){
                     toast("登录失败, 检查是否已连接正确WIFI~");
                     storages.remove(storageName)
                 }
-            }else{
+            }else{      // NTEy为配置问题
                 toast("Unknown error!~");
             }
         }

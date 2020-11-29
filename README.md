@@ -23,7 +23,7 @@
 
 ## 说明：
 
-> :star:只适用安卓， 不支持IOS
+> :star:只适用安卓， 不支持IOS。[IOS捷径下载](https://www.icloud.com/shortcuts/00790109d85f458faf05cd5ec85d04a8) @
 >
 > 用户名(DDDDD)： 一般是学号@运营商，例如B17050322@cmcc。
 
@@ -32,6 +32,8 @@
 ## 原理：
 
 其中代码中wlanuserip、wlanacip、wlanacname的获取有两种方式：①直接模拟JS去6.6.6.6得参数；②shell版本是利用未登录上网时会自动跳转，提取跳转登录页面携带的参数
+
+感谢：@[Len](https://github.com/Len-Jon)提出的校园网NJUPT不能登录的问题，以及解决方案。目前[issues#1](https://github.com/Freedomisgood/NjuptCmcc/issues/1): (NJUPT与CMCC访问6.6.6.6返回结果不一样)已解决：当NJUPT登录时通过6.6.6.6网址重定向url提取参数
 
 ## 使用：
 
@@ -43,8 +45,10 @@ Apk下载链接： [NjuptCmcc DownLoad](./src/NjuptCmcc.apk)
 
 ---
 
-2020年11月11日： 现已新增通用版本[Github下载：NjuptNet DownLoad](./src/NjuptNet.apk)
+2020年11月11日： 现已新增通用版本[Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.1.apk)
 
-蓝奏云下载链接：https://wws.lanzous.com/iTcMIiuo5na  密码:c6xc
+2020年11月29日：经反馈，发现NJUPT校园网无法登录，做了修改，上传V2.0.1版本
+
+蓝奏云下载链接【推荐】：https://wws.lanzous.com/iSLo2ivy1hg  密码:7jzk
 
 注：后缀选项——电信为: @njxy; 移动为: @cmcc; 不填默认为NJUPT。
