@@ -35,7 +35,9 @@
 
 其中代码中wlanuserip、wlanacip、wlanacname的获取有两种方式：①直接模拟JS去6.6.6.6得参数；②shell版本是利用未登录上网时会自动跳转，提取跳转登录页面携带的参数
 
-感谢：@@[Len](https://github.com/Len-Jon)提出的校园网NJUPT不能登录的问题，以及解决方案。目前[issues#1](https://github.com/Freedomisgood/NjuptCmcc/issues/1): (NJUPT与CMCC访问6.6.6.6返回结果不一样)已解决：当NJUPT登录时通过6.6.6.6网址重定向url提取参数
+感谢：@[Len](https://github.com/Len-Jon)提出的校园网NJUPT不能登录的问题，以及解决方案。目前[issues#1](https://github.com/Freedomisgood/NjuptCmcc/issues/1): (NJUPT与CMCC访问6.6.6.6返回结果不一样)已解决：当NJUPT登录时通过6.6.6.6网址重定向url提取参数。
+
+	- 在DEBUG过程中，NJUPT账号下线又会自动登录，不太方便操作。补充一个[用户自主服务系统](http://10.10.244.240:8080/Self/dashboard)链接， 进行注销下线
 
 ## 使用：
 
@@ -49,15 +51,19 @@
 
 ## 下载
 
- 蓝奏云下载链接【推荐】：https://wws.lanzous.com/iSLo2ivy1hg  密码:7jzk
+V2.0.1 蓝奏云下载链接：https://wws.lanzous.com/iSLo2ivy1hg  密码:7jzk
+
+V2.0.2 蓝奏云下载链接【推荐】：https://wws.lanzous.com/iybhPiw1wjc  密码:e0td
 
 - [Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.1.apk)
 
 ## 更新
 
-2020年11月11日： 现已新增通用版本[Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.1.apk)
+2020年11月11日： 现已新增通用版本[Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.2.apk)
 
 2020年11月29日：经反馈，发现NJUPT校园网无法登录，做了修改，上传V2.0.1版本
+
+2020年11月29日：@[Len](https://github.com/Len-Jon)对网络选择新增了单选dialog的优化，上传V2.0.2版本
 
 
 
