@@ -138,8 +138,6 @@ function getUserConfig() {
     var ctx = storages.create(storageName);
     var userConfig = {}
     if (!ctx.contains("DDDDD")) {
-        var user = rawInput("请输入校园网账号");
-        var pwd = rawInput("请输入校园网密码");
         const options = ["NJUPT", "NJUPT-CMCC", "NJUPT-CHINANET"];
         const suffix = ["", "@cmcc", "@njxy"];
         var i = dialogs.singleChoice("想要连接的网络", options);
@@ -154,7 +152,8 @@ function getUserConfig() {
         }
         var carrier = suffix[i];
 
-
+        var user = rawInput("请输入校园网账号");
+        var pwd = rawInput("请输入校园网密码");
         var DDDDD = ",0," + user + carrier;
         if (user !== null && pwd !== null && user !== "") {
             ctx.put("DDDDD", DDDDD);

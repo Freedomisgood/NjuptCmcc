@@ -53,7 +53,7 @@
 
 V2.0.1 蓝奏云下载链接：https://wws.lanzous.com/iSLo2ivy1hg  密码:7jzk
 
-V2.0.2 蓝奏云下载链接【推荐】：https://wws.lanzous.com/iybhPiw1wjc  密码:e0td
+V2.0.2 蓝奏云下载链接【推荐】：https://wws.lanzous.com/iS5rMiw2lwf  密码:hyz8
 
 - [Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.1.apk)
 
@@ -65,5 +65,4 @@ V2.0.2 蓝奏云下载链接【推荐】：https://wws.lanzous.com/iybhPiw1wjc  
 
 2020年11月29日：@[Len](https://github.com/Len-Jon)对网络选择新增了单选dialog的优化，上传V2.0.2版本
 
-
-
+![demo](./src/demo.jpg)
