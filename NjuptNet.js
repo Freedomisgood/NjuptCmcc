@@ -4,6 +4,9 @@
  */
 
 const storageName = "njuptNet_nymrli.top";
+//如需更改信息，临时取消下一行的注释
+//storages.remove(storageName);
+
 
 var headers = {
     'Connection': 'keep-alive',
@@ -131,31 +134,40 @@ function doConfig(){
 
 
 
-function getUserConfig(){
-    const mainkey = "DDDDD";
+function getUserConfig() {
     var ctx = storages.create(storageName);
     var userConfig = {}
-    if ( !ctx.contains(mainkey) ) {
-        alert("注意！\n校园网账号为:校园卡号+后缀\n后缀填法——\n    电信为: @njxy; \n    移动为: @cmcc; \n    (不填为NJUPT)")
-        var user = rawInput("请输入校园网账号(校园卡号):\n+[@cmcc][@njxy][不填]");
-        var pwd = rawInput("请输入密码(默认身份证后6位):")
-        toastLog("你输入的账号为: " + user)
-        var DDDDD = ",0," + user;
-        // var DDDDD = ",0," + user + "@cmcc";
-        // log("存入的值为: ", DDDDD);
-        if (user != null && pwd != null){
+    if (!ctx.contains("DDDDD")) {
+        var user = rawInput("请输入校园网账号");
+        var pwd = rawInput("请输入校园网密码");
+        const options = ["NJUPT", "NJUPT-CMCC", "NJUPT-CHINANET"];
+        const suffix = ["", "@cmcc", "@njxy"];
+        var i = dialogs.singleChoice("想要连接的网络", options);
+        if (i >= 0) {
+            toast("账号: " + user + "\n" +
+                "ESSID: " + options[i]
+            );
+
+        } else {
+            toast("您取消了选择");
+            exit();
+        }
+        var carrier = suffix[i];
+
+
+        var DDDDD = ",0," + user + carrier;
+        if (user !== null && pwd !== null && user !== "") {
             ctx.put("DDDDD", DDDDD);
             ctx.put("upass", pwd);
-        }else{
-            toastLog("账号密码无效!");
+        } else {
+            toast("账号密码无效!");
             exit();
         }
     }
     userConfig["DDDDD"] = ctx.get("DDDDD");
     userConfig["upass"] = ctx.get("upass");
     return userConfig;
- }
- 
+}
 
 
 function login(cfg, userConfig){
