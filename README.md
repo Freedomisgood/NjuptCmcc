@@ -52,10 +52,13 @@
 ## 下载
 
 V2.0.1 蓝奏云下载链接：https://wws.lanzous.com/iSLo2ivy1hg  密码:7jzk
+- [Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.1.apk)
+
 
 V2.0.2 蓝奏云下载链接【推荐】：https://wws.lanzous.com/iS5rMiw2lwf  密码:hyz8
+- V2.0.2 更新下载链接：https://wwe.lanzoui.com/iS5rMiw2lwf  密码:hyz8
 
-- [Github下载：NjuptNet DownLoad](./src/NjuptNet-v2.0.1.apk)
+如果链接失效，请在issue里提出， 或者源码下载。
 
 ## 更新
 
